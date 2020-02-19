@@ -5,6 +5,7 @@ library(read.dbc)
 for(i in estado){
   for(j in ano){
     for(k in mes){
+      # o PS deve ser alterado de acordo com o tipo do dado
       inputfile = paste(pathfile, "PS", i, j, k, ".dbc", sep="")
       
       data = read.dbc(inputfile)
