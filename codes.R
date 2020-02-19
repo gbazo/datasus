@@ -1,3 +1,7 @@
+install.packages("read.dbc")
+
+library(read.dbc)
+
 for(i in estado){
   for(j in ano){
     for(k in mes){
