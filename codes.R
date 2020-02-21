@@ -2,6 +2,15 @@ install.packages("read.dbc")
 
 library(read.dbc)
 
+estado = ("AC") # pode-se utilizar + de 1 estado, ex: c("SP","MG")
+ano = as.character(13:19) #2013 até 2019
+# o mes precisa ser nesse formato, usar o as.caracter é mais inteligente porem não gera o zero da esquerda
+mes = c("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12")
+# local dos dados
+pathfile = "/Arquivos/documentos/PS/Dados/"
+# local para salvar os dados processados
+proc = "/Arquivos/documentos/PS/Proc/"
+
 for(i in estado){
   for(j in ano){
     for(k in mes){
